@@ -76,3 +76,35 @@ body{
     bottom: 0px;
     z-index: 1;
 }
+
+@mixin modalHeader {
+    background-color: $background-dark;
+    color: floralwhite;
+}
+@mixin modalBody {
+    background-color: $background-pale;
+}
+
+#reserveModal {
+    .modal-header{
+        @include modalHeader();
+    }
+    button{
+        color: floralwhite;
+    }
+    .modal-body{
+        @include modalBody();
+    }
+}
+
+#loginModal {
+    .modal-header{
+        @include modalHeader();
+    }
+    button{
+        color: floralwhite;
+    }
+    .modal-body{
+        @include modalBody();
+    }
+}
